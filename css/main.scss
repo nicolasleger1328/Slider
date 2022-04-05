@@ -1,0 +1,62 @@
+body{
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: gray;
+
+}
+.totale{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    // width: 900px;
+}
+.vertical{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Main{
+    width: 900px;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.Main img{
+    object-fit: cover;
+    display: none;
+
+  
+    max-height: 700px;
+}
+.Main img.ecran{
+    display: block;
+    object-fit: cover;
+}
+button{
+    margin: 5px;
+}
+ul{
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    width: 300px;
+}
+li{
+    display: inline;
+}
+.activ{
+    color: wheat;
+}
+div button.auto{
+    display: none;
+}
+div button.auto.ondesk{
+    display: inline-block;
+}
