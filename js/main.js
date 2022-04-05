@@ -1,14 +1,14 @@
 function slider(){
-    imgPuceRem()
+    imgPuceRem();
     index++;
     if(index>image.length-1){
         index=0;
     }
-    imgPuceAdd()
+    imgPuceAdd();
 }
 function imgPuceRem(){
-    image[index].classList.remove("ecran")
-    btncir[index].classList.remove("activ")
+    image[index].classList.remove("ecran");
+    btncir[index].classList.remove("activ");
 }
 function imgPuceAdd(){
     image[index].classList.add("ecran");
@@ -58,15 +58,14 @@ for(let j=0; j<play.length; j++)
 play[j].addEventListener("click", function(){
     
     if(j==0){
-        slide=setInterval(slider, 1000);
+        slide=setInterval(slider, 3000);
         play[j].classList.remove("ondesk");
         play[j+1].classList.add("ondesk")
     }
     if(j==1){
         clearInterval(slide);
         play[j].classList.remove("ondesk");
-        play[j-1].classList.add("ondesk")
+        play[j-1].classList.add("ondesk");
     }
 
 })
-
